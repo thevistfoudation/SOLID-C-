@@ -32,7 +32,7 @@
 - `Problem` Hình dung nhé! chúng ta đang có 1 nhân vật Knight có khả năng cận chiến mà game GD muốn chúng ta phát triển 1 nhân vật Knight level 2 mà có thêm kỹ năng không chiến bay nhảy và tấn công từ xa , theo lối tư duy mòn chắc chúng ta sẽ viết tiếp 1 hàm hỗ trợ cho việc không chiến chứ? vậy là vi phạm nguyên tắc rồi -_- 🕵️‍♀️
 - ![image](https://user-images.githubusercontent.com/47918431/137584283-5d784f9f-cf14-4efd-bc75-cafb11fc2779.png) 
 - `Solution` Vậy theo đúng nguyên lí chúng ta sẽ viết 1 class là KnightController2 kế thừa lại class KnightController để phát triển tiếp 🐱‍👓
-- Tổng kết: Đây là phương án rất an toàn và thiện thiện, vừa giúp phát triển code mới mà lại không lo làm hỏng code cũ.
+- Tổng kết: Đây là phương án rất an toàn và thuận tiện, vừa giúp phát triển code mới mà lại không lo làm hỏng code cũ.
 <a name="Liskov"></a>
 ### Liskov substitution principle (LSP)
 - Nguyên tắc Phân vùng Liskov
@@ -49,6 +49,10 @@
 - ![image](https://user-images.githubusercontent.com/47918431/137585714-5349feb6-69d4-4f61-af02-865799d29c5b.png)
 - `Solution` Để giải quyết vấn đề này chúng ta sẽ chia các Skill thành nhiều Interface như Skill Lửa , Skill Băng , Skill Gió rồi nhân vật hệ nào sẽ sử dụng Interface chứa Skill hệ đó 
 - Tổng kết: Nguyên lý SOLID này giúp bạn dễ dàng mở rộng quy mô một cách đơn giản.
-###
+<a name="Dependency"></a>
+###  Dependency inversion principle (DIP)
+- Nguyên tắc đảo ngược sự phụ thuộc 
+- 1: Các Module cấp cao không nên phụ thuộc vào các module cấp thấp(cả 2 nên phụ thuộc vào abstraction)
+- 2: Interface(abstraction) không nên phụ thuộc vào chi tiết , ngược lại(Các Class giao tiếp với nhau thông qua interface, không phải thông qua implemention.)
 
 
